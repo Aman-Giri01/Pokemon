@@ -28,12 +28,12 @@ export const Pokemon=()=>{
             // console.log(detailedPokemonData);
 
             const detailedResponses=await Promise.all(detailedPokemonData);
-            console.log(detailedResponses);
+            // console.log(detailedResponses);
             setPokemon(detailedResponses);
             setLoading(false);
             
         } catch (error) {
-            console.log("Error: ",error.message);
+            // console.log("Error: ",error.message);
             setLoading(false);
             setError(error)
             
